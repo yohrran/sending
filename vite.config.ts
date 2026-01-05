@@ -22,5 +22,13 @@ export default defineConfig({
   server: {
     port: 8000,
     open: true,
+    proxy: {
+      '/api': {
+        target: 'https://openapi.koreainvestment.com:9443',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+        secure: false,
+      }
+    }
   },
 });

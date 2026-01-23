@@ -18,9 +18,6 @@ export const Temp = () => {
 
   const temp = sumOfSquaresOfOddNumbers(3, [1, 2, 3, 4, 5, 6, 7]);
 
-  console.log(temp);
-
   return null;
 };
 
-type Head = <T>(arr: T[]) => T;

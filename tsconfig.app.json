@@ -1,18 +1,36 @@
 {
   "compilerOptions": {
+    // 컴파일 타겟 설정
     "target": "ES2023",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
-    "strict": true,
-    "skipLibCheck": true,
+
+    // 빌드 설정
     "noEmit": true,
+    "skipLibCheck": true,
     "verbatimModuleSyntax": true,
     "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+
+    // 🔒 엄격한 타입 체크 (Strict Type Checking)
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // 코드 품질
+    "forceConsistentCasingInFileNames": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+
+    // 경로 별칭
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

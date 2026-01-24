@@ -1,9 +1,9 @@
-import StockScreener from "./components/StockScreener";
 
 export const App = () => {
   return (
     <div>
-      <StockScreener />
+      
+    <p>123</p>
     </div>
   );
 };

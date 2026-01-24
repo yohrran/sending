@@ -1,14 +1,24 @@
 {
   "compilerOptions": {
+    // 컴파일 타겟 설정
     "target": "ES2023",
     "lib": ["ES2023"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "types": ["node"],
-    "strict": true,
-    "skipLibCheck": true,
+
+    // 빌드 설정
     "noEmit": true,
-    "verbatimModuleSyntax": true
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+
+    // 🔒 엄격한 타입 체크
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["vite.config.ts"]
 }
